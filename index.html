@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/baksogoreng.png">
+
+    <title>BAKSO GORENG</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="dict/output.css"> <!-- Link ke file output.css dari Tailwind -->
+</head>
+<body>
+    <div id="home" class="bg-customOrange h-screen relative">
+        <!-- Logo -->
+        <div class="fixed z-50">
+            <div class="z-30 w-8 cursor-pointer relative sm:hidden" id="hamburger">
+                <img src="images/baksogoreng.png" alt="">
+            </div>
+            <div class="z-10 w-14 cursor-pointer relative sm:absolute translate-y-3 hidden sm:block">
+                <img src="images/baksogoreng.png" alt="">
+            </div>
+
+            <!-- Navbar -->
+            <ul id="navbar" class="text-sm font-semibold z-20 w-24 sm:w-0 flex flex-col items-center rounded-md h-44 bg-white sm:relative sm:left-1/2 sm:translate-x-28 md:translate-x-44 lg:translate-x-72 sm:-top-10 sm:flex-row sm:-translate-y-9 sm:bg-transparent sm:opacity-100 tracking-wider p-2 top-0 absolute left-0 transform -translate-x-full opacity-0 transition-transform transition-opacity duration-300 ease-in-out">
+                <li class="mt-5 cursor-pointer text-customOrange hover:text-orange-700 sm:text-black sm:mx-5 lg:text-lg"><a href="#home">Home</a></li>
+                <li class="mt-5 cursor-pointer text-customOrange hover:text-orange-700 sm:text-black sm:mx-5 lg:text-lg"><a href="#about">About</a></li>
+                <li class="mt-5 cursor-pointer text-customOrange hover:text-orange-700 sm:text-black sm:mx-5 lg:text-lg"><a href="#variant">Varian</a></li>
+                <li class="mt-5 cursor-pointer text-customOrange hover:text-orange-700 sm:text-black sm:mx-5 lg:text-lg"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Background and Image -->
+        <div class="w-24 h-24 sm:w-80 lg:w-[450px] sm:h-80 lg:h-[450px] rounded-full bg-white sm:blur-sm absolute right-0 sm:translate-x-20 top-24 sm:top-36"></div>
+        <img class="w-24 absolute sm:right-20 sm:top-44 right-5 top-24 sm:w-72  lg:w-[450px]" src="images/gerobak.png" alt="">
+
+        <!-- Content -->
+        <div class="flex flex-col lg:translate-x-32 translate-y-24 sm:translate-y-56 mx-6">
+            <span class="font-bold text-3xl lg:text-8xl text-white md:text-7xl font-sans sm:text-5xl ">BASRENG</span>
+            <span class="text-[10px] sm:mt-2  lg:ml-28 md:text-lg sm:text-sm text-white sm:ml-12 font-serif font-semibold ml-7">(Bakso Goreng)</span>
+            <span class="text-white font-serif lg:text-xl lg:mt-16 lg:left-14 md:text-lg md:mt-10 sm:mt-2 text-[10px] mr-4 top-14 sm:top-[70px]  sm:text-sm absolute">"Kriuk di luar Renyah di dalam"</span>
+           
+        </div>
+        
+    </div>
+    <div class="w-28 h-9 z-40 md:translate-y-52 lg:ml-72 lg:top[190px] md:ml-24 bg-white top-[180px] sm:translate-y-40 ml-8 sm:ml-16 absolute font-semibold cursor-pointer font-mono text-center rounded-lg">
+        <a href="https://wa.me/628558362554?text=Apakah%20bakso%20goreng%20nya%20masih%20tersedia%3F" target="_blank" class="block w-full h-full p-2 hover:rounded-md hover:bg-black hover:text-white">
+            Order Now
+        </a>
+    </div>
+    
+
+    <!-- About Section -->
+    <div class=" -translate-y-[489px] sm:-translate-y-[300px]">
+        <div id="about"  class="w-full z-30  sm:translate-y-72 lg:absolute translate-y-[192px] bg-abu h-4 blur-sm"></div>
+        <div class="bg-abu w-full h-72 absolute top-[201px] sm:top-[300px]">
+            <h1 class="py-3 left-2 ml-11 font-extrabold text-customOrange sm:translate-y-8 sm:text-xl">ABOUT ME</h1>
+            <p class="px-8 text-justify sm:translate-y-8 text-customOrange font-bebas text-[10px] sm:text-[15px] sm:font-normal sm:w-[490px] md:w-[580px] lg:w-[700px] md:text-[16px] container font-semibold">
+                Selamat datang di Bakso Goreng Kriuk – tempat terbaik untuk menikmati bakso goreng renyah dengan cita rasa yang autentik dan menggugah selera! Kami berkomitmen untuk menghadirkan pengalaman kuliner yang tak terlupakan melalui sajian bakso goreng yang dibuat dari bahan-bahan berkualitas tinggi. Di Bakso Goreng Kriuk, setiap bulatan bakso dibuat dengan penuh cinta dan keahlian.
+            </p>
+        </div>
+        <div class="w-full z-30 translate-y-[467px] sm:translate-y-[565px] bg-abu h-4 blur-sm"></div>
+
+        <!-- Contact Section -->
+        <div class="absolute top-[385px] sm:-[420px] right-3">
+            <div class="bg-customOrange w-32 h-48 sm:w-36 sm:h-[250px] rounded-md relative">
+                <img src="/images/baksogoreng.png" alt="" class="block -mx-1">
+                <div class="bg-abu w-32 sm:w-36 h-[84px]  sm:h-28 rounded-md absolute bottom-0 flex flex-col justify-between pt-2 px-1">
+                    <p class="font-bold text-sm text-center">CONTACT</p>
+                    <div class="flex items-center">
+                        <img src="/images/telp.png" alt="" class="w-3">
+                        <p class="text-[10px] ml-1 font-bold sm:text-sm">: 0855-8362-554</p> 
+                    </div>
+                    <div class="flex items-center">
+                        <img src="/images/email.png" alt="" class="w-3">
+                        <p class="text-[8px] ml-1 font-bold sm:text-[10px]">: widiakantri@gmail.com</p>
+                    </div>
+                    <p class="text-[10px] font-thin text-center sm:text-sm">Est. 2024</p>
+                </div>
+            </div>
+            
+        </div>
+     
+    </div>
+
+    <div id="variant" class="bg-customOrange h-screen sm:mt-64 p-5 pt-10 lg:mt-72">
+<h1  class="font-extrabold text-white text-3xl tracking-wider">Varian</h1>
+
+<div class="flex flex-col sm:flex-row sm:gap-10 lg:gap-16 translate-y-11  justify-center items-center">
+    <div class="sm:translate-y-16 lg:translate-y-8">
+        <!-- Image Container -->
+        <div class="w-36 h-40 lg:w-44 lg:h-60 flex items-center bg-abu rounded-br-xl rounded-tl-md pt-1 justify-center">
+            <img id="variantImage" src="/images/original.png" alt="">
+        </div>
+
+        <!-- Flavor Selection Buttons -->
+        <div class="flex gap-2 mt-2 justify-center">
+            <div id="btnOriginal" onclick="changeVariant('original')" class="w-20 h-8 p-1 bg-teal-500 cursor-pointer text-white rounded-md font-semibold text-center">Original</div>
+            <div id="btnPedas" onclick="changeVariant('pedas')" class="w-20 h-8 p-1 bg-white cursor-pointer font-semibold rounded-md text-center">Pedas</div>
+        </div>
+    </div>
+
+    <!-- Text Content -->
+    <div class="text-sm text-justify sm:w-64 md:w-80 md:text-base w-52 lg:translate-x-20 lg:w-96 sm:translate-y-10">
+        <h1 id="variantTitle" class="font-bold text-[15px] mt-2 text-white lg:text-3xl">BAKSO GORENG ORIGINAL</h1>
+        <p id="variantDescription" class="text-white lg:text-lg">
+            Nikmati kelezatan bakso goreng klasik kami! Varian Original ini menghadirkan rasa autentik yang gurih dan nikmat, dengan perpaduan sempurna antara daging berkualitas dan bumbu tradisional. Tekstur luarnya yang renyah dan bagian dalam yang lembut akan memanjakan lidah Anda di setiap gigitan.
+        </p>
+    </div>
+</div>
+
+
+    </div>
+    <!-- Contact Section -->
+<div id="contact" class="bg-abu pt-10 pb-16">
+    <h1 class="font-extrabold text-customOrange text-xl tracking-wider text-center">CONTACT US</h1>
+    <p class="text-center text-customOrange font-semibold sm:w-[500px] md:w-[580px] lg:w-[700px] mx-auto my-4">
+        Kami siap melayani Anda! Hubungi kami melalui nomor telepon atau email di bawah ini, atau kunjungi kami untuk
+        mencicipi langsung bakso goreng renyah kami.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-10">
+        <div class="flex items-center gap-2">
+            <img src="/images/telp.png" alt="Telephone Icon" class="w-5">
+            <span class="text-customOrange font-semibold">0855-8362-554</span>
+        </div>
+        <div class="flex items-center gap-2">
+            <img src="/images/email.png" alt="Email Icon" class="w-5">
+            <span class="text-customOrange font-semibold">widiakantri@gmail.com</span>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="bg-customOrange text-white py-5 mt-5">
+    <div class="flex flex-col items-center">
+        <img src="images/baksogoreng.png" alt="Logo" class="w-12 mb-3">
+        <p class="text-center text-sm md:text-base font-semibold">© 2024 Bakso Goreng Kriuk. All rights reserved.</p>
+        <p class="text-center text-xs mt-2">Created by MoohZhal</p>
+    </div>
+</footer>
+
+    
+
+    <!-- JavaScript for Navbar Toggle -->
+    <script src="js/script.js"> </script>
+</body>
+</html>
