@@ -40,3 +40,22 @@ if (variant === "original") {
     btnOriginal.classList.remove("bg-teal-500", "text-white");
 }
 }
+
+
+function kirimPesan() {
+    // Ambil nilai input nama dan pesan
+    const nama = document.getElementById('nama').value;
+    const pesan = document.getElementById('pesan').value;
+
+    // Nomor WhatsApp tujuan dengan kode negara (+62)
+    const nomorWa = '628558362554';
+
+    // Format pesan
+    const teksPesan = `Nama: ${nama}\nPesan: ${pesan}`;
+
+    // Buat URL WhatsApp dengan format pesan
+    const urlWa = `https://wa.me/${nomorWa}?text=${encodeURIComponent(teksPesan)}`;
+
+    // Buka WhatsApp
+    window.open(urlWa, '_blank');
+}
